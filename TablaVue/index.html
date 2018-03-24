@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://rawgit.com/matfish2/vue-tables-2/master/dist/vue-tables-2.min.js"></script>
+    <script src="C:\Users\mamurillo\Documents\Programacion\TablaVue\tablaVue.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-daterangepicker/2.1.17/daterangepicker.min.css"></link>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="C:\Users\mamurillo\Documents\Programacion\TablaVue\main.css" />
+  </head>
+   
+  <body>
+    <h3 class="vue-title">Vue Tables 2 Demo - Client Component</h3>
+
+    <div id="app">
+      <v-client-table :columns="columns" :data="data" :options="options">
+        <a slot="uri" slot-scope="props" target="_blank" :href="props.row.uri" class="glyphicon glyphicon-eye-open"></a>
+
+        <div slot="child_row" slot-scope="props">
+          The link to {{props.row.name}} is <a :href="props.row.uri">{{props.row.uri}}</a>
+        </div>
+      </v-client-table>
+    </div>
+
+  </body>
+</html>
