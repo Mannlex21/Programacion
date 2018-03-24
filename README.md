@@ -1,1 +1,3 @@
 # Programacion
+
+Programando en el trabajo cuando no hay algo que hacer...
