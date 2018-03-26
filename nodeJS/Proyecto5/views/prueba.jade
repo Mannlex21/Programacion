@@ -1,0 +1,18 @@
+doctype
+html
+  head
+    title Jade
+  body
+    h1 Bienvenidos a Jade
+    div#contenedor.clase1.clase2 Contenido
+        p.parrafo Párrafo 1
+        p.parrafo Párrafo 2
+        p.parrafo Párrafo 3
+    img(src="https://www.google.com.ar/images/srpr/logo11w.png", alt="Imagen de Google")
+    -var me_gusta_node = false;
+    -if(me_gusta_node)
+        p Me gusta Node
+    -else
+        p No me gusta Node
+    p Fruta: #{fruta}. Color #{color}.
+    include prueba2
