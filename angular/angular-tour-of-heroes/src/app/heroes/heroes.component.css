@@ -1,0 +1,22 @@
+.selected{
+    background-color: gray;
+    color:white;
+}
+li{
+    list-style-type: none;
+    margin-bottom: 5px;
+    width: 18%;
+    background-color: rgb(202, 202, 202);
+    border-radius: 5px;
+    padding: 5px 2px 5px 0px;
+    color: black;
+    cursor: pointer;
+    text-decoration: dashed;
+}
+.badge{
+    color: white;
+    background: rgb(63, 63, 63); 
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    padding: 5px 5px 5px 5px;
+}
