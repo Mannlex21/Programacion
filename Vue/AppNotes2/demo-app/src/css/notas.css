@@ -1,6 +1,9 @@
+.red,.white,.yellow,.orange,.green,.brown,.gray{
+    font-family: 'Patua One', cursive!important;
+}
 .red{
     color:white!important;
-    background:red!important;
+    background:#E53935!important;
 }
 .white{
     background:white!important;
@@ -8,5 +11,18 @@
 }
 .yellow {
     color: black !important;
-    background: yellow !important;
+    background: #FDD835 !important;
+}
+.orange{
+    background: #F4511E!important; 
+}
+.green{
+    background: #43A047!important; 
+}
+.brown{
+    background: #6D4C41!important; 
+}
+.gray{
+    background: #757575!important; 
+    color: white!important;  
 }

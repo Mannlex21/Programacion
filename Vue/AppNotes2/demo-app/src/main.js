@@ -6,7 +6,9 @@ import router from './router'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import { store } from './store'
+import VueFire from 'vuefire'
 
+Vue.use(VueFire)
 Vue.use(Vuetify)
 
 Vue.config.productionTip = false
@@ -14,7 +16,7 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
-  router,
+  router: router,
   store,
   render: h => h(App)
 })
