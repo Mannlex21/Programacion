@@ -38,7 +38,6 @@
       <v-btn icon @click.stop="dialog = true" v-if="agregarNotaVisible">
         <v-icon>note_add</v-icon>
       </v-btn>
-      
     </v-toolbar>
     <v-content>
       <router-view/>
@@ -84,6 +83,7 @@
 <script>
 import firebase from 'firebase'
 import {db} from './javascripts/firebaseConfig'
+
 export default {
   firebase: {
     notas: {
@@ -109,11 +109,11 @@ export default {
         {text: 'Cafe', value: 'brown'},
         {text: 'Gris', value: 'gray'}
       ],
-      menuVisible: true,
+      menuVisible: this.$parent.menDrw,
       agregarNotaVisible: true,
       dialog: false,
       clipped: true,
-      drawer: true,
+      drawer: false,
       object: {},
       fixed: false,
       menuItems: [

@@ -91,8 +91,8 @@
 </template>
 <script>
 import firebase from 'firebase'
-import main from '../main'
-export default {
+import main from '../main.js'
+export default{
   name: 'login',
   data: function () {
     return {
@@ -113,8 +113,9 @@ export default {
       var ro = this.$router
       firebase.auth().signInWithEmailAndPassword(this.email, this.password).then(
         function (user) {
-          
           ro.replace('/inicio')
+          // app.drawer = true
+          main.menDrw = true
         }
       ).catch(
         function (error) {

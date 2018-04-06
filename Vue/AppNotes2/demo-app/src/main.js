@@ -14,9 +14,12 @@ Vue.use(Vuetify)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */
-new Vue({
+export let appvue = new Vue({
   el: '#app',
   router: router,
+  data: {
+    menDrw: false
+  },
   store,
   render: h => h(App)
 })
